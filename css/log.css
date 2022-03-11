@@ -1,0 +1,32 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: #A7E87A;
+}
+#box {
+    padding-top: 10px;
+    background: white;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+label {
+    margin: 5px 0 5px 15px;
+}
+input {
+    background: #a8e87a49;
+    border: 2px solid #A7E87A !important;
+    margin: 10px;
+    width: 480px !important;
+}
+
+button:hover {
+    border-color:#A7E87A !important;
+    background: #A7E87A !important;
+}
