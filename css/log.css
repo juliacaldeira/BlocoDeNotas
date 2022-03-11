@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 * {
     border: 0;
     padding: 0;
@@ -5,12 +6,13 @@
 }
 body {
     background: #A7E87A;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 #box {
     padding-top: 10px;
     background: white;
     width: 500px;
-    height: 500px;
+    height: auto;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -19,14 +21,26 @@ body {
 label {
     margin: 5px 0 5px 15px;
 }
-input {
-    background: #a8e87a49;
-    border: 2px solid #A7E87A !important;
+input[type=text], input[type=email], input[type=password] {
+    background: white;
+    border: 2px solid #A7E87A;
     margin: 10px;
-    width: 480px !important;
+    width: 470px;
+    outline: none;
+    padding-left: 5px;
+    height: 40px;
+    font-size: 20px;
+}
+input[type=submit] {
+    height: 30px;
+    width: 140px;
+    font-size: 20px;
+    margin: 0 0 10px 10px;
+    margin-left: 180px;
 }
 
-button:hover {
-    border-color:#A7E87A !important;
-    background: #A7E87A !important;
+input[type=submit]:hover {
+    border-color:#A7E87A;
+    background: #A7E87A;
+    cursor: pointer;
 }
