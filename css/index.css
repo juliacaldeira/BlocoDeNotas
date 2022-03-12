@@ -49,11 +49,11 @@
     position: relative;
     height: 30px;
 }
-#organ div {
+.form {
     position: absolute;
     right: 10px;
 }
-#organ button {
+.but {
     width: 200px;
     height: 25px;
 }

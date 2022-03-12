@@ -1,0 +1,50 @@
+<style>
+    form {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        top: 20%;
+    }
+    #nota {
+        background: #A7E87A;
+        font-size: 15px;
+        outline: none;
+    }
+    input[type=submit] {
+        width: 100px;
+        height: 30px;
+        margin-top: 20px;
+    }
+    input[type=submit]:hover {
+        cursor: pointer;
+    }
+    #tools {
+        width: auto;
+        height: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+    .tool {
+        background: lightgray;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        margin: 0 2px 0 2px;
+    }
+    .tool:hover {
+        cursor: pointer;
+        background: gray;
+        color: white;
+    }
+</style>
+<body>
+    <form>
+        <div id="tools">
+            <button class="tool" id="sub"><u>U</u></button>
+            <button class="tool" id="bold"><strong>B</strong></button>
+            <button class="tool" id="ital"><i>I</i></button>
+        </div>
+        <textarea name="nota" id="nota" cols="100" rows="20">text text text</textarea>
+        <input type="submit" name="salvar" value="Salvar">
+    </form>
+</body>
