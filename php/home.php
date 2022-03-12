@@ -1,7 +1,7 @@
 <?php 
-include_once("../html/header.html");
-include_once("../html/body.html");
-include_once("../html/footer.html");
+include("../html/header.html");
+include("../html/body.html");
+include("../html/footer.html");
 
 
 
