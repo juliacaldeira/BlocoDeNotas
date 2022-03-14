@@ -10,12 +10,12 @@
         font-size: 15px;
         outline: none;
     }
-    input[type=submit] {
+    input {
         width: 100px;
         height: 30px;
         margin-top: 20px;
     }
-    input[type=submit]:hover {
+    input:hover {
         cursor: pointer;
     }
     #tools {
@@ -38,13 +38,15 @@
     }
 </style>
 <body>
-    <form>
+    <form method="POST">
         <div id="tools">
             <button class="tool" id="sub"><u>U</u></button>
             <button class="tool" id="bold"><strong>B</strong></button>
             <button class="tool" id="ital"><i>I</i></button>
         </div>
-        <textarea name="nota" id="nota" cols="100" rows="20">text text text</textarea>
+        <textarea name="nota" id="nota" cols="100" rows="20"></textarea>
         <input type="submit" name="salvar" value="Salvar">
+        <input type="submit" name="excluir" value="Excluir">
+        <input type="submit" name="voltar" value="Voltar">
     </form>
 </body>

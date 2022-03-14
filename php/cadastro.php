@@ -22,7 +22,7 @@ if( (!empty($_POST['nome'])) && (!empty( $_POST['username'])) && (!empty( $_POST
         mysqli_query($conexao, $string_sql);
 
         mysqli_close($conexao);
-   
+        
         header("Location: ./index.php");
         die();
     }
