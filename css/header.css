@@ -7,27 +7,31 @@
     */
 }
 #nav-bar {
-    background: #A7E87A;
+    background: white;
+    border-bottom: 1px solid lightgray;
     width: 100%;
-    height: 50px;
+    height: 60px;
     display: flex;
     position: relative;
 }
 #nav-bar ul {
     margin: 0;
+    font-size: 20px;
+    padding: 10px;
+    align-self: center;
 }
 #nav-bar ul li {
     display: inline;
     text-decoration: none;
 }
-.nav-ul {
-    font-size: 20px;
-    padding: 10px;
-    align-self: center;
-}
 #start {
     position: absolute;
     left: 40px;
+}
+#start img {
+    margin-top: 7px;
+    width: 250px; 
+    height: auto;
 }
 #mid {
     position: absolute;
@@ -37,9 +41,30 @@
 #end {
     position: absolute;
     right: 30px;
+    display: flex;
 }
-#end li {
-    padding-right: 10px;
+#butCriar {
+    width: 200px;
+    height: 30px;
+    background: white;
+    border: 2px solid #82B1FF;
+    font-size: 15px;
+}
+#butCriar:hover {
+    cursor: pointer;
+    background: #82B1FF;
+}
+#butSair {
+    background: transparent;
+    width: 70px;
+    height: 30px;
+    font-size: 16px;
+    color: red;
+    margin-left: 10px;
+}
+#butSair:hover {
+    cursor: pointer;
+    color: rgb(218, 0, 0);
 }
 .form {
     position: absolute;

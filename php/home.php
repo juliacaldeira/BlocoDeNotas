@@ -15,12 +15,8 @@ require("./aut.php");
     }
 ?>
     <html>
-    <link rel="stylesheet" href="../css/index.css">
-    <body>
-    <div id="organ">
-            <p>Suas notas:</p>
+    <link rel="stylesheet" href="">
             <form method="POST" class="form">
-            <input type="submit" value="Criar nota" class="but" name="criar">
             <input type="submit" value="Excluir nota" class="but" name="excluir">
             <select name="ordem" id="ordem">
                 <option value="">Ordernar por</option>

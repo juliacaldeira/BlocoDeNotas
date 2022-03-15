@@ -5,7 +5,7 @@
     margin: 0;
 }
 body {
-    background: #A7E87A;
+    background: rgba(226, 226, 226, 0.746);
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 #box {
@@ -17,13 +17,15 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 12px 12px 2px 1px rgba(71, 71, 71, 0.2);
 }
 label {
+    display: block;
     margin: 5px 0 5px 15px;
 }
-input[type=text], input[type=email], input[type=password] {
+.cadIpt, .logIpt {
     background: white;
-    border: 2px solid #A7E87A;
     margin: 10px;
     width: 470px;
     outline: none;
@@ -31,16 +33,31 @@ input[type=text], input[type=email], input[type=password] {
     height: 40px;
     font-size: 20px;
 }
-input[type=submit] {
+.cadIpt {
+    border: 2px solid #82B1FF;
+}
+.logIpt {
+    border: 2px solid #FF950A;
+}
+#butC, #butL {
     height: 30px;
     width: 140px;
     font-size: 20px;
     margin: 0 0 10px 10px;
     margin-left: 180px;
+    background: white;
 }
-
-input[type=submit]:hover {
-    border-color:#A7E87A;
-    background: #A7E87A;
+#butC {
+    border: 2px solid #FF950A;
+}
+#butL {
+    border: 2px solid #82B1FF;
+}
+#butC:hover {
     cursor: pointer;
+    background: #FF950A;
+}
+#butL:hover {
+    cursor: pointer;
+    background: #82B1FF;
 }
