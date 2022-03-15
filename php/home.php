@@ -17,7 +17,6 @@ require("./aut.php");
     <html>
     <link rel="stylesheet" href="">
             <form method="POST" class="form">
-            <input type="submit" value="Excluir nota" class="but" name="excluir">
             <select name="ordem" id="ordem">
                 <option value="">Ordernar por</option>
             </select>
@@ -35,8 +34,6 @@ require("./aut.php");
     </html>
 
 <?php
-require("../html/footer.html");
-
 if(isset($_POST['criar'])) {
     header("Location: ./nota.php");
 }
