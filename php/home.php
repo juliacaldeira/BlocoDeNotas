@@ -19,7 +19,11 @@ require("./aut.php");
 ?>
     <html>
     <link rel="stylesheet" href="../Css/home.css">
-    <script src="../script.js"></script>
+    <script>
+        function notasredirect(id) {
+    window.location.href = "./altnota.php?000000000"+id;
+}
+    </script>
         <div id="linha"></div>
         <div id="grid">
            <?php 

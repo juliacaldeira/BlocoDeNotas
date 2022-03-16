@@ -1,5 +1,4 @@
 <?php 
-//require("../html/header.html");
 require("../html/nota.html");
 require("./aut.php");
 
@@ -7,6 +6,7 @@ if(isset($_POST['salvar'])) {
 
     $nota = $_POST['nota'];
     $user = user_atual();
+    header("Location: ./home.php");
 
 if(!empty($_POST['nota'])) {
 
@@ -24,4 +24,7 @@ if(!empty($_POST['nota'])) {
 if(isset($_POST['voltar'])) {
     header("Location: ./home.php");
     die();
+}
+if(isset($_POST['excluir'])) {
+    echo '<script>alert("Comando inválido");</script>';
 }

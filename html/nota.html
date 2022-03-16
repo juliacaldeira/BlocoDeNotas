@@ -1,4 +1,6 @@
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
     form {
         position: absolute;
         left: 50%;
@@ -6,48 +8,47 @@
         top: 20%;
     }
     #nota {
-        background: #A7E87A;
+        background: white;
         font-size: 15px;
         outline: none;
+        border: 2px solid lightgray;
+        font-family: arial;
+        width: 800px;
+    }
+    #nota:focus {
+        border-color: #82B1FF;
+    }
+    div {
+        height: 40px;
+        width: 400px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 200px;
     }
     input {
         width: 100px;
         height: 30px;
-        margin-top: 20px;
+        margin: 30px 10px 0 10px;
+        background: white;
+        border: 2px solid gray;
+        font-family: 'Poppins', arial;
+        font-size: 15px;
     }
     input:hover {
         cursor: pointer;
-    }
-    #tools {
-        width: auto;
-        height: 20px;
-        display: flex;
-        flex-direction: row;
-    }
-    .tool {
-        background: lightgray;
-        width: 20px;
-        height: 20px;
-        text-align: center;
-        margin: 0 2px 0 2px;
-    }
-    .tool:hover {
-        cursor: pointer;
-        background: gray;
-        color: white;
+        border-color: #FF950A;
     }
 </style>
-<script src="../script.js"></script>
 <body>
     <form method="POST">
-        <div id="tools">
-            <button class="tool" id="sub"><u>U</u></button>
-            <button class="tool" id="bold"><strong>B</strong></button>
-            <button class="tool" id="ital"><i>I</i></button>
-        </div>
         <textarea name="nota" id="nota" cols="100" rows="20"></textarea>
+        <div>
         <input type="submit" name="salvar" value="Salvar">
         <input type="submit" name="excluir" value="Excluir">
         <input type="submit" name="voltar" value="Voltar">
+        </div>
     </form>
 </body>
+
+<script>textarea = document.getElementById("nota");</script>
