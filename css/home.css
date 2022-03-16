@@ -16,3 +16,6 @@
     border: 1px solid;
     border-color: #FF950A #FF950A #82B1FF #FF950A;
 }
+.nota-grid:hover {
+    cursor: pointer;
+}
