@@ -1,0 +1,18 @@
+#linha {
+    width: 100%;
+    height: 30px;
+}
+#grid {
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    gap: 40px 170px;
+    margin: 0 20px 0 20px;
+    font-family: arial;
+    font-size: 15px;
+}
+.nota-grid {
+    width: 250px;
+    height: 200px;
+    border: 1px solid;
+    border-color: #FF950A #FF950A #82B1FF #FF950A;
+}
