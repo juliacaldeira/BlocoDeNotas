@@ -8,7 +8,6 @@ if(isset($_POST['but'])) {
         $entrada = $_POST['entry'];
         $senha = md5($_POST['senha']);
 
-        $conexao = mysqli_connect("localhost", "root", "", "bloco_notas");
         $verifEntradaUser = mysqli_query($conexao, "SELECT * FROM usuario WHERE username = '$entrada'");
         $verifEntradaEmail = mysqli_query($conexao, "SELECT * FROM usuario WHERE email = '$entrada'");
         $verifSenha = mysqli_query($conexao, "SELECT * FROM usuario WHERE senha = '$senha'");

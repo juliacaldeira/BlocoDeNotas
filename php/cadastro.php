@@ -1,5 +1,6 @@
 <?php 
 require("../html/cadastro.html");
+require("./aut.php"); //get database connection
 
 if(isset($_POST['but'])) {
 if( (!empty($_POST['nome'])) && (!empty( $_POST['username'])) && (!empty( $_POST['email'])) && (!empty( $_POST['senha'])) ) {
@@ -9,7 +10,6 @@ if( (!empty($_POST['nome'])) && (!empty( $_POST['username'])) && (!empty( $_POST
     $email = $_POST['email'];
     $senha = md5($_POST['senha']);
 
-    $conexao = mysqli_connect("localhost", "root", "", "bloco_notas");
     $verifUsername = mysqli_query($conexao, "SELECT * FROM usuario WHERE username = '$username'");
     $verifEmail = mysqli_query($conexao, "SELECT * FROM usuario WHERE email = '$email'");
 

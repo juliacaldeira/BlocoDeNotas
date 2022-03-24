@@ -1,5 +1,6 @@
 <?php
 require("../html/nota.html");
+require("./aut.php");
 ?>
 <script>
     function mostrarNota(texto) {
@@ -10,7 +11,6 @@ require("../html/nota.html");
 
     $url_nota_id = substr($_SERVER["REQUEST_URI"], -10);
 
-    $conexao = mysqli_connect("localhost", "root", "", "bloco_notas");
     $pegarNota = mysqli_query($conexao, "SELECT text FROM nota WHERE nota_id = '$url_nota_id'");
 
     while($nota = mysqli_fetch_array($pegarNota)) {

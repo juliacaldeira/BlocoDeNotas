@@ -8,3 +8,5 @@ function aut_user($id) {
 function user_atual() {
     return $_SESSION['user_id'];
 }
+
+$conexao = mysqli_connect("localhost", "root", "", "bloco_notas");

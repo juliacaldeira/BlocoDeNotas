@@ -10,7 +10,6 @@ if(isset($_POST['salvar'])) {
 
 if(!empty($_POST['nota'])) {
 
-    $conexao = mysqli_connect("localhost", "root", "", "bloco_notas");
     $string_sql = "INSERT INTO nota (nota_id, text, usuario_id) VALUES (null,'$nota','$user')";
 
     mysqli_query($conexao, $string_sql);

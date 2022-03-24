@@ -3,7 +3,6 @@ require("../html/header.html");
 require("./aut.php");
 
     $user = user_atual();
-    $conexao = mysqli_connect("localhost", "root", "", "bloco_notas");
     $pegarNotas = mysqli_query($conexao, "SELECT nota_id, text FROM nota WHERE usuario_id = '$user'");
 
     $linhas = mysqli_num_rows($pegarNotas);
