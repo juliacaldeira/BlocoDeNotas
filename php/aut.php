@@ -10,3 +10,10 @@ function user_atual() {
 }
 
 $conexao = mysqli_connect("localhost", "root", "", "bloco_notas");
+
+function set_email($em) {
+    $_SESSION['email'] = $em;
+}
+function get_email() {
+    return $_SESSION['email'];
+}

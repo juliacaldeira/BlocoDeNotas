@@ -3,12 +3,14 @@ require("../html/cadastro.html");
 require("./aut.php"); //get database connection
 
 if(isset($_POST['but'])) {
-if( (!empty($_POST['nome'])) && (!empty( $_POST['username'])) && (!empty( $_POST['email'])) && (!empty( $_POST['senha'])) ) {
+if( (!empty($_POST['nome'])) && (!empty( $_POST['username'])) && (!empty($_POST['email'])) && (!empty( $_POST['senha'])) ) {
     
     $nome = $_POST['nome'];
     $username = $_POST['username'];
     $email = $_POST['email'];
     $senha = md5($_POST['senha']);
+
+    set_email($email);
 
     $verifUsername = mysqli_query($conexao, "SELECT * FROM usuario WHERE username = '$username'");
     $verifEmail = mysqli_query($conexao, "SELECT * FROM usuario WHERE email = '$email'");
@@ -23,7 +25,7 @@ if( (!empty($_POST['nome'])) && (!empty( $_POST['username'])) && (!empty( $_POST
 
         mysqli_close($conexao);
         
-        header("Location: ./index.php");
+        header("Location: ./verifemail.php");
         die();
     }
     else if ($linhasUsername > 0) {
