@@ -31,6 +31,4 @@ if( (!empty($_POST['nome'])) && (!empty( $_POST['username'])) && (!empty( $_POST
     } else {
         echo '<script>alert("O email inserido já existe.");</script>';
     }
-}}
-
-?>
+}}?>
